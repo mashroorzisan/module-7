@@ -13,7 +13,18 @@
             border: 10px solid blue;
             overflow: scroll;
             /* overflow: hidden; */
+        }
 
+        .mini-mini {
+            width: 100px;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+
+        .short-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     </style>
 </head>
@@ -21,7 +32,7 @@
 <body>
     <h2>this is a test</h2>
     <div class="mini-mini">
-        <p class="short-text">this is my sample text</p>
+        <p class="short-text" title="this is my sample text">this is my sample text</p>
     </div>
     <div class="mega-box">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt nulla voluptates accusantium.
