@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation transition</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid grey;
+            background-color: coral;
+            transition: transform 5s steps cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .box:hover {
+            transform: scale(.1) translate(3440px) rotate(960deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Css animation</h2>
+    <div class="box">
+        <h3>Transition</h3>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket match project</title>
+    <style>
+        .field {
+            height: 500px;
+            background-color: greenyellow;
+            border: 2px solid green;
+        }
+
+        .bat {
+            width: 300px;
+            transition: transform .2s;
+        }
+
+        .ball {
+            width: 50px;
+            position: relative;
+            left: 140px;
+            transition: transform .2s .2s;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-45deg);
+            transform-origin: top right;
+        }
+
+        .field:hover .ball {
+            transform: translate(1000%, -300%) scale(.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat"
+            src="kisspng-gray-nicolls-cricket-bat-batting-pads-cricket-bat-png-pic-5a7805ab07f2e9.1649444415178152110326.png"
+            alt="bat">
+        <img class="ball" src="/kisspng-baseball-bat-vector-baseball-5a896807794f57.4951998915189545034969.png"
+            alt="ball">
+    </div>
+
+</body>
+
+</html>
